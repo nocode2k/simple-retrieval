@@ -28,7 +28,7 @@ public class IndexReader {
                 value = 0.0;
             }
             score = weight + value + (tokenInfo.idf * tokenGeneration.tf);
-            score = Math.round(score*1000) / 1000.0; //소숫점 3자리까지 표현
+            score = Math.round(score*10000) / 10000.0; //소숫점 4자리까지 표현
             resultHashMap.put(tokenGeneration.textDocument, score);
         }
     }

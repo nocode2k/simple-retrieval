@@ -1,3 +1,0 @@
-CrowdLogging: distributed, private, and anonymous search logging
-Henry Allen Feild, James Allan, Joshua Glatt
-Proceedings of the 34th international ACM SIGIR conference on Research and development in Information Retrieval

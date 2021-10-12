@@ -1,0 +1,5 @@
+ACM-1835637
+Query term ranking based on dependency parsing of verbose queries
+Jae Hyun Park, W. Bruce Croft
+Proceedings of the 33rd international ACM SIGIR conference on Research and development in information retrieval
+Query term ranking approaches are used to select effective terms from a verbose query by ranking terms. Features used for query term ranking and selection in previous work do not consider grammatical relationships between terms. To address this issue, we use syntactic features extracted from dependency parsing results of verbose queries. We also modify the method for measuring the effectiveness of query terms for query term ranking.
