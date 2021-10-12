@@ -42,10 +42,10 @@ public class IndexWriter {
             Map.Entry<String, TokenInfo> entry = mapEntries.next();
             TokenInfo tokenInfo = entry.getValue();
             double numDocRefs = tokenInfo.tokenGenerationList.size();
-            // idf(t,D) = log (N/( n))
+            // idf(t,D) = 1 + log (N/( n))
             // N은 데이터 세트의 문서 수
             // n은 데이터 세트 중 용어 t를 포함하는 문서의 수
-            double idf = Math.log(documentSize / numDocRefs);
+            double idf = 1 + Math.log(documentSize / numDocRefs);
             if (idf == 0.0) {
                 mapEntries.remove();
             } else {
