@@ -4,7 +4,7 @@
 ## Environment
 
 This example uses:
-* Oracle JDK 11
+* Open JDK 11
 
 ## Build
 
