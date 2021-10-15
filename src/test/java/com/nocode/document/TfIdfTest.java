@@ -37,6 +37,9 @@ public class TfIdfTest {
     }
 
     /**
+     * tf(t,d) = n/N
+     * n은 문서 d에 용어 t가 나타나는 횟수
+     * N은 문서 d의 총 용어 수
      * @param doc  list of strings
      * @param term String represents a term
      * @return term frequency of term in document
@@ -54,6 +57,9 @@ public class TfIdfTest {
     }
 
     /**
+     * idf(t,D) = log (N/( n))
+     * N은 데이터 세트의 문서 수
+     * n은 데이터 세트 중 용어 t를 포함하는 문서의 수
      * @param docs list of list of strings represents the dataset
      * @param term String represents a term
      * @return the inverse term frequency of term in documents
@@ -73,12 +79,10 @@ public class TfIdfTest {
     }
 
     /**
+     *
      * @param doc  a text document
      * @param docs all documents
      * @param term term
-     *             // idf(t,D) = log (N/( n))
-     *             // N은 데이터 세트의 문서 수
-     *             // n은 데이터 세트 중 용어 t를 포함하는 문서의 수
      * @return the TF-IDF of term
      */
     private double tfIdf(Map<String, Integer> doc, List<Map<String, Integer>> docs, String term) {
