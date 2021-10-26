@@ -1,5 +1,8 @@
 package com.nocode.document;
 
+/**
+ * score sorting class
+ */
 public class DocComparator implements Comparable<Object>{
 
     public TextFileVector textFileVector;

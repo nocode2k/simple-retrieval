@@ -1,5 +1,8 @@
 package com.nocode.document;
 
+/**
+ * Posting information class
+ */
 public class TokenGeneration {
     public TextFileVector textDocument;
     public int count;

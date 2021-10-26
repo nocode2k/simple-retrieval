@@ -6,7 +6,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 public class TokenMapVector {
-    public Map<String, Weight> tokenMap;
+    public Map<String, TokenCount> tokenMap;
 
     public TokenMapVector() {
         tokenMap = new HashMap<>();
@@ -18,18 +18,18 @@ public class TokenMapVector {
         return str;
     }
 
-    public Set<Entry<String, Weight>> entrySet() {
+    public Set<Entry<String, TokenCount>> entrySet() {
         return tokenMap.entrySet();
     }
 
     public void increment(String token, double amount) {
         token = stringReplace(token);
-        Weight weight = tokenMap.get(token);
-        if (weight == null) {
-            weight = new Weight();
-            tokenMap.put(token, weight);
+        TokenCount tokenCount = tokenMap.get(token);
+        if (tokenCount == null) {
+            tokenCount = new TokenCount();
+            tokenMap.put(token, tokenCount);
         }
-        weight.increment(amount);
+        tokenCount.increment(amount);
     }
 
     public void increment(String token) {
@@ -39,7 +39,7 @@ public class TokenMapVector {
     @Override
     public String toString() {
         StringBuilder ret = new StringBuilder();
-        for (Entry<String, Weight> entry : entrySet()) {
+        for (Entry<String, TokenCount> entry : entrySet()) {
             ret.append(entry.getKey()).append(": ").append(entry.getValue().getValue()).append(" ");
         }
         return ret.toString();

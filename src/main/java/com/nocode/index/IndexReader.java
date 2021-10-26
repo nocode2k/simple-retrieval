@@ -35,7 +35,7 @@ public class IndexReader {
 
     public DocComparator[] docComparator(TokenMapVector searchVector) {
         Map<TextFileVector, Double> resultHashMap = new HashMap<>();
-        for (Map.Entry<String, Weight> entry : searchVector.entrySet()) {
+        for (Map.Entry<String, TokenCount> entry : searchVector.entrySet()) {
             String token = entry.getKey();
             calculateScoreToken(token, resultHashMap);
         }

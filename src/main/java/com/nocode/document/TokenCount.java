@@ -1,6 +1,6 @@
 package com.nocode.document;
 
-public class Weight {
+public class TokenCount {
 
     private double value = 0;
 

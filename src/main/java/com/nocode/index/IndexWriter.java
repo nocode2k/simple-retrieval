@@ -25,9 +25,10 @@ public class IndexWriter {
 
     public void indexDocument(File inputFile) {
         TextFileVector textDocument = new TextFileVector(inputFile);
-        TokenMapVector tokenMapVector = textDocument.getTokenMapVector();
         textDocumentList.add(textDocument);
-        for (Map.Entry<String, Weight> entry : tokenMapVector.entrySet()) {
+
+        TokenMapVector tokenMapVector = textDocument.getTokenMapVector();
+        for (Map.Entry<String, TokenCount> entry : tokenMapVector.entrySet()) {
             String token = entry.getKey();
             int count = (int) entry.getValue().getValue();
             //System.out.println("token > " + token + ", count > " + count + ", file > " + textDocument.toString());

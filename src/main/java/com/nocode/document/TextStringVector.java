@@ -1,5 +1,8 @@
 package com.nocode.document;
 
+/**
+ * query string vector class
+ */
 public class TextStringVector {
 
     public TokenMapVector getTokenMapVector(String keyword) {

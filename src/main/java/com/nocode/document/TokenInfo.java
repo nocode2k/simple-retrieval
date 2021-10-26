@@ -3,9 +3,13 @@ package com.nocode.document;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * inverted index structure class
+ */
 public class TokenInfo {
     public double idf;
 
+    //posting list
     public List<TokenGeneration> tokenGenerationList;
 
     public TokenInfo() {

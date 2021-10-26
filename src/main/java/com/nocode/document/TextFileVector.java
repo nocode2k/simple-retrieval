@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * document file vector class
+ */
 public class TextFileVector {
 
     private final File textFile;
