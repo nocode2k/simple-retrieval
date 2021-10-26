@@ -5,6 +5,7 @@
 
 This example uses:
 * Open JDK 11
+* Gradle 6.9.1
 
 ## Build
 
@@ -14,8 +15,11 @@ https://gradle.org/releases/
 * Build example this:
 ```
 $ gradle build
-$ java -jar build\libs\retrieval-example-1.0.jar
+$ java -jar build\libs\simple-retrieval-1.0.jar
 > Results:
-Rank [1] data14630412609676380414.tmp > score: 0.0061709906463573196
-Rank [2] data17549848829480395490.tmp > score: 0.0028589052686063257
+Rank [1] data12.txt > score: 1.1864
+Rank [2] data13.txt > score: 1.0852
+Rank [3] data06.txt > score: 1.0426
+Rank [4] data19.txt > score: 1.0274
+Rank [5] data02.txt > score: 1.0225
 ```

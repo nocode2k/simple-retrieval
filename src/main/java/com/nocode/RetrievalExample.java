@@ -13,7 +13,7 @@ import java.util.List;
 public class RetrievalExample {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
-        String query = "paper";
+        String query = "ranking";
         System.out.println("검색어 > " + query);
         long start = System.currentTimeMillis();
         IndexWriter indexWriter = new IndexWriter();
